@@ -1,6 +1,14 @@
-// Import stylesheets
-import './style.css';
+console.log('ss');
+// const suc = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('success1');
+//   }, 1000);
+// });
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+const fai = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Failur');
+  }, 1000);
+});
+
+fai.then(console.log).catch(console.log);
